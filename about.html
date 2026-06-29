@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos — ZYNTROTECH</title>
+  <meta name="description" data-i18n-content="about.hero.lead"
+        content="ZYNTROTECH est une société de conseil spécialisée en business intelligence, data science et développement logiciel." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-title-key="meta.about.title">
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="index.html#product" data-i18n="nav.product">Produit</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav.about">À propos</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Thème" type="button">
+          <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button data-lang="fr" type="button">FR</button>
+          <button data-lang="en" type="button">EN</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Discutons</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow" data-i18n="about.hero.eyebrow">À propos</span>
+        <h1 data-i18n="about.hero.title">L’expertise data au service de votre croissance</h1>
+        <p class="lead" data-i18n="about.hero.lead">ZYNTROTECH est une société de conseil spécialisée.</p>
+      </div>
+    </section>
+
+    <section class="bg-alt">
+      <div class="container" style="max-width:780px">
+        <div class="reveal">
+          <h2 data-i18n="about.story.title">Notre raison d’être</h2>
+          <p class="lead" data-i18n="about.story.p1">Trop d’entreprises possèdent une mine de données qu’elles n’exploitent pas.</p>
+          <p data-i18n="about.story.p2">Nous combinons rigueur analytique et savoir-faire technique.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2 data-i18n="about.values.title">Nos valeurs</h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2h6c0-.8.4-1.5 1-2A7 7 0 0 0 12 2Z"/></svg>
+            </div>
+            <h3 data-i18n="about.v1t">Clarté</h3>
+            <p data-i18n="about.v1d">Des solutions simples et bien documentées.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4 3 6.5 7 8 4-1.5 7-4 7-8V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3 data-i18n="about.v2t">Fiabilité</h3>
+            <p data-i18n="about.v2d">Un travail rigoureux et digne de confiance.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg>
+            </div>
+            <h3 data-i18n="about.v3t">Impact</h3>
+            <p data-i18n="about.v3d">Nous mesurons la valeur réellement créée.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 data-i18n="cta.title">Un projet data ou logiciel en tête ?</h2>
+          <p data-i18n="cta.text">Parlons-en.</p>
+          <p style="margin-top:1.5rem">
+            <a href="contact.html" class="btn btn-primary" data-i18n="cta.btn">Nous contacter</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand"><img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech</a>
+          <p style="margin-top:1rem" data-i18n="footer.tagline">Conseil en BI, data science et développement logiciel.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="index.html#product" data-i18n="nav.product">Produit</a></li>
+            <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ZYNTROTECH — <span data-i18n="footer.rights">Tous droits réservés.</span></span>
+        <span>Poissy, France</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
