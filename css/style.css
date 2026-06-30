@@ -14,7 +14,7 @@
   --muted:     #7a8a91;
   --line:      #1d2c33;
   --line-soft: #15222a;
-  --header-bg: rgba(10,20,26,.72);
+  --header-bg: rgba(8,17,22,.8);
 
   /* Marque (issue du logo) */
   --teal:      #19a3b8;
@@ -50,7 +50,7 @@
   --muted:     #6c7c87;
   --line:      #e4ebec;
   --line-soft: #eef3f3;
-  --header-bg: rgba(255,255,255,.72);
+  --header-bg: rgba(255,255,255,.8);
 
   --teal-deep: #0c5d6b;
   --accent:    #0e7f8f;
@@ -453,11 +453,15 @@ section { padding: 96px 0; position: relative; }
   .nav-links {
     position: absolute; top: 72px; left: 0; right: 0;
     flex-direction: column; align-items: flex-start; gap: 0;
-    background: var(--bg); border-bottom: 1px solid var(--line);
-    padding: .5rem 24px 1.4rem; max-height: 0; overflow: hidden;
-    transition: max-height .3s var(--ease); box-shadow: var(--shadow);
+    background: var(--bg); border-bottom: 1px solid transparent;
+    padding: 0 24px; max-height: 0; overflow: hidden; visibility: hidden;
+    transition: max-height .3s var(--ease), padding .3s var(--ease), visibility .3s var(--ease);
+    box-shadow: none;
   }
-  .nav-links.open { max-height: 360px; }
+  .nav-links.open {
+    max-height: 380px; padding: .5rem 24px 1.4rem; visibility: visible;
+    border-bottom-color: var(--line); box-shadow: var(--shadow);
+  }
   .nav-links li { width: 100%; }
   .nav-links a { display: block; padding: .9rem 0; width: 100%; }
   .nav-links a::after { display: none; }
