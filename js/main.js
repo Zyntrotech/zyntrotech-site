@@ -10,7 +10,6 @@
 
   var SUPPORTED = ["fr", "en"];
   var DEFAULT_LANG = "fr";
-  var CONTACT_EMAIL = "contact@zyntrotech.com"; // ← à adapter si besoin
 
   /* ---------- Thème (dark par défaut) ---------- */
   function getTheme() {
@@ -137,12 +136,8 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!form.action || form.action.indexOf("REPLACE_WITH_YOUR_ID") !== -1) {
-        // Pas encore configuré : repli sur l'e-mail direct
-        var subj = (form.subject && form.subject.value || "Contact via le site").trim();
-        var body = (form.message && form.message.value || "").trim() +
-                   "\n\n— " + (form.name && form.name.value || "").trim();
-        window.location.href = "mailto:" + CONTACT_EMAIL +
-          "?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(body);
+        // Formspree pas encore configuré : on n'expose aucune adresse
+        showStatus("err");
         return;
       }
       var original = btn ? btn.textContent : "";
