@@ -438,6 +438,66 @@ section { padding: 96px 0; position: relative; }
 .reveal[data-delay="1"] { transition-delay: .08s; }
 .reveal[data-delay="2"] { transition-delay: .16s; }
 .reveal[data-delay="3"] { transition-delay: .24s; }
+.reveal[data-delay="4"] { transition-delay: .32s; }
+
+/* ---------- Cas d'usage ---------- */
+.uc-card { position: relative; overflow: hidden; padding-right: 2rem; }
+.uc-card .uc-index {
+  position: absolute; top: -.6rem; right: .4rem;
+  font-size: 4.6rem; font-weight: 800; line-height: 1; letter-spacing: -.04em;
+  background: var(--grad-text); -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; opacity: .14; pointer-events: none;
+}
+.card-tag {
+  display: inline-block; font-size: .72rem; font-weight: 700;
+  letter-spacing: .09em; text-transform: uppercase; color: var(--teal-deep); margin-bottom: .7rem;
+}
+.uc-card h3 { margin-bottom: .5rem; }
+.uc-card p { margin: 0; font-size: .97rem; }
+.uc-arrow { margin-top: 1.2rem; display: inline-flex; color: var(--teal-deep); transition: transform .25s var(--ease); }
+.uc-arrow svg { width: 22px; height: 22px; }
+.uc-card:hover .uc-arrow { transform: translateX(7px); }
+
+/* ---------- Ce qui nous distingue ---------- */
+.why-item { display: flex; gap: 1.15rem; align-items: flex-start; }
+.why-ic {
+  flex: 0 0 auto; width: 50px; height: 50px; border-radius: 14px;
+  display: grid; place-items: center; color: #fff;
+  background: var(--grad-soft); box-shadow: var(--glow);
+}
+.why-ic svg { width: 24px; height: 24px; }
+.why-item h3 { margin: .1rem 0 .35rem; }
+.why-item p { margin: 0; font-size: .97rem; }
+
+/* ---------- Pour qui ---------- */
+.who-sectors {
+  margin-top: 2.2rem; text-align: center; color: var(--muted);
+  font-weight: 600; font-size: .95rem;
+}
+
+/* ---------- FAQ (accordéon) ---------- */
+.faq { max-width: 800px; margin: 0 auto; }
+.faq-item {
+  border: 1px solid var(--line); border-radius: 14px; background: var(--surface);
+  margin-bottom: .8rem; overflow: hidden;
+  transition: border-color .2s var(--ease), box-shadow .2s var(--ease);
+}
+.faq-item[open] { border-color: rgba(18,130,148,.4); box-shadow: var(--shadow); }
+.faq-item summary {
+  cursor: pointer; list-style: none; padding: 1.15rem 1.35rem;
+  font-weight: 650; font-size: 1.02rem; color: var(--ink);
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: ""; flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--grad-soft);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11 5h2v14h-2zM5 11h14v2H5z'/%3E%3C/svg%3E") center/60% no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11 5h2v14h-2zM5 11h14v2H5z'/%3E%3C/svg%3E") center/60% no-repeat;
+  transition: transform .28s var(--ease);
+}
+.faq-item[open] summary::after { transform: rotate(135deg); }
+.faq-a { padding: 0 1.35rem 1.25rem; margin: 0; color: var(--ink-soft); font-size: .97rem; line-height: 1.65; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
