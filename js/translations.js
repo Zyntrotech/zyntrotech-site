@@ -232,6 +232,10 @@ window.TRANSLATIONS = {
     "contact.info.addr":    "Adresse",
     "contact.info.hours":   "Disponibilité",
     "contact.info.hoursv":  "Lun – Ven, 9h – 18h",
+    "meta.merci.title": "Message envoyé — ZYNTROTECH",
+    "merci.h":   "Message envoyé !",
+    "merci.p":   "Merci pour votre message. Nous revenons vers vous sous 48 h.",
+    "merci.btn": "Retour à l’accueil",
 
     /* Footer */
     "footer.tagline": "Conseil en business intelligence, data science, IA et développement logiciel.",
@@ -481,6 +485,10 @@ window.TRANSLATIONS = {
     "contact.info.addr":    "Address",
     "contact.info.hours":   "Availability",
     "contact.info.hoursv":  "Mon – Fri, 9am – 6pm",
+    "meta.merci.title": "Message sent — ZYNTROTECH",
+    "merci.h":   "Message sent!",
+    "merci.p":   "Thanks for your message. We’ll get back to you within 48h.",
+    "merci.btn": "Back to home",
 
     /* Footer */
     "footer.tagline": "Consulting in business intelligence, data science, AI and software development.",

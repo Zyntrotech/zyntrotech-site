@@ -118,47 +118,16 @@
     els.forEach(function (el) { io.observe(el); });
   }
 
-  /* ---------- Formulaire de contact (Formspree) ---------- */
+  /* ---------- Formulaire de contact ----------
+     Géré nativement par Netlify Forms (envoi + reCAPTCHA + anti-spam
+     vérifiés côté serveur). Pas de soumission AJAX ici : le formulaire
+     part normalement et redirige vers /merci.html en cas de succès. */
   function initContactForm() {
-    var form = document.querySelector("#contact-form");
-    if (!form) return;
-    var status = document.querySelector("#form-status");
-    var btn = form.querySelector("button[type=submit]");
-    var lang = getLang();
-
-    function showStatus(kind) {
-      if (!status) return;
-      status.hidden = false;
-      status.className = "form-status " + (kind === "ok" ? "ok" : "err");
-      status.textContent = t(kind === "ok" ? "contact.form.ok" : "contact.form.err", getLang());
-    }
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (!form.action || form.action.indexOf("REPLACE_WITH_YOUR_ID") !== -1) {
-        // Formspree pas encore configuré : on n'expose aucune adresse
-        showStatus("err");
-        return;
-      }
-      var original = btn ? btn.textContent : "";
-      if (btn) { btn.disabled = true; btn.textContent = t("contact.form.sending", getLang()); }
-
-      fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" }
-      }).then(function (res) {
-        if (res.ok) {
-          form.reset();
-          showStatus("ok");
-        } else {
-          showStatus("err");
-        }
-      }).catch(function () {
-        showStatus("err");
-      }).then(function () {
-        if (btn) { btn.disabled = false; btn.textContent = original; }
-      });
+    var btn = document.querySelector("#contact-form button[type=submit]");
+    if (!btn) return;
+    btn.form.addEventListener("submit", function () {
+      btn.disabled = true;
+      btn.textContent = t("contact.form.sending", getLang());
     });
   }
 

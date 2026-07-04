@@ -18,8 +18,11 @@ python3 -m http.server 8080
 
 > Domaine configuré : **https://zyntrotech.com** (sans www).
 
+## Formulaire de contact
+Géré par **Netlify Forms** (nom du formulaire : `contact`) — envoi + reCAPTCHA + honeypot + anti-spam Akismet vérifiés côté serveur. Succès → redirige vers `merci.html`.
+- [ ] Dans **Netlify → Forms → contact → Settings → Form notifications**, ajouter une notification email vers ta boîte pour recevoir les messages.
+
 ## À finaliser avant la mise en ligne
-- [ ] **Formulaire** : créer un formulaire sur [formspree.io](https://formspree.io) et remplacer `REPLACE_WITH_YOUR_ID` dans `contact.html`.
 - [ ] **Logo** : remplacer `assets/logo-mark.svg` par le fichier officiel (le favicon utilise le même).
 - [ ] **Mentions légales** : remettre le lien vers `legal.html` dans le pied de page (obligatoire en France) — compléter l'hébergeur dans `legal.html`.
 - [ ] Soumettre `sitemap.xml` dans la **Google Search Console**.

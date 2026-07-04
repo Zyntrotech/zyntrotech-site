@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://www.google.com https://www.gstatic.com; connect-src 'self'; form-action 'self'; frame-src https://www.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Contact — ZYNTROTECH | Parlons de votre projet data</title>
   <meta name="description" data-i18n-content="contact.hero.lead"
@@ -71,8 +71,12 @@
     <section class="bg-alt">
       <div class="container contact-grid">
         <!-- Formulaire -->
-        <form id="contact-form" class="form form-card reveal"
-              action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST" novalidate>
+        <form id="contact-form" name="contact" method="POST" action="/merci.html"
+              data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true"
+              class="form form-card reveal" novalidate>
+          <input type="hidden" name="form-name" value="contact" />
+          <!-- honeypot anti-robot (ne pas remplir) -->
+          <p hidden><label>Ne pas remplir : <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
           <div class="field">
             <label for="name" data-i18n="contact.form.name">Nom</label>
             <input id="name" name="name" type="text" required
@@ -93,13 +97,12 @@
             <textarea id="message" name="message" required
                       data-i18n-placeholder="contact.form.message.ph" placeholder="Décrivez votre besoin…"></textarea>
           </div>
-          <!-- anti-spam (ne pas remplir) -->
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true" />
+          <!-- CAPTCHA vérifié côté serveur (Netlify) -->
+          <div data-netlify-recaptcha="true" class="captcha"></div>
           <div>
             <button type="submit" class="btn btn-primary" data-i18n="contact.form.send">Envoyer le message</button>
           </div>
-          <p class="form-status" id="form-status" role="status" hidden></p>
-          <p class="form-note" data-i18n="contact.form.note">Vos données ne servent qu’à répondre à votre demande.</p>
+          <p class="form-note" data-i18n="contact.form.note">Formulaire protégé contre le spam. Vos données ne servent qu’à répondre à votre demande.</p>
         </form>
 
         <!-- Coordonnées -->
