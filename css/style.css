@@ -146,6 +146,11 @@ img { display: block; }
 }
 .pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(90,166,54,.18); }
 
+/* Produits à venir */
+.soon-block { margin-top: 4.5rem; }
+.soon-card .soon-pill { margin-bottom: 1rem; }
+.soon-pill .dot { background: #e8a33d; box-shadow: 0 0 0 3px rgba(232,163,61,.18); }
+
 /* ---------- Boutons ---------- */
 .btn {
   display: inline-flex; align-items: center; gap: .55rem;

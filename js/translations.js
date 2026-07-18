@@ -32,6 +32,12 @@ window.TRANSLATIONS = {
     "product.b3": "Pilotage centralisé de votre présence sociale",
     "product.cta": "Découvrir Sokestra",
 
+    "soon.eyebrow": "À venir",
+    "soon.title":   "Nos prochains produits",
+    "soon.badge":   "Bientôt disponible",
+    "soon.nibras":  "Un nouveau produit ZYNTROTECH en préparation. Plus de détails très bientôt.",
+    "soon.nubireo": "Un nouveau produit ZYNTROTECH en préparation. Plus de détails très bientôt.",
+
     /* Accueil — hero */
     "home.hero.eyebrow": "Conseil Data · IA · Logiciel",
     "home.hero.title1":  "Vos données,",
@@ -284,6 +290,12 @@ window.TRANSLATIONS = {
     "product.b2": "AI-generated, orchestrated content",
     "product.b3": "Centralized control of your social presence",
     "product.cta": "Discover Sokestra",
+
+    "soon.eyebrow": "Coming soon",
+    "soon.title":   "Our next products",
+    "soon.badge":   "Coming soon",
+    "soon.nibras":  "A new ZYNTROTECH product in the making. More details very soon.",
+    "soon.nubireo": "A new ZYNTROTECH product in the making. More details very soon.",
 
     /* Home — hero */
     "home.hero.eyebrow": "Data · AI · Software consulting",
