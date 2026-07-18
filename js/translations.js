@@ -32,6 +32,9 @@ window.TRANSLATIONS = {
     "product.b3": "Pilotage centralisé de votre présence sociale",
     "product.cta": "Découvrir Sokestra",
 
+    "home.hero.annTag":  "Nouveau",
+    "home.hero.annText": "Sokestra — réseaux sociaux orchestrés par l’IA",
+
     "soon.eyebrow": "À venir",
     "soon.title":   "Nos prochains produits",
     "soon.badge":   "Bientôt disponible",
@@ -290,6 +293,9 @@ window.TRANSLATIONS = {
     "product.b2": "AI-generated, orchestrated content",
     "product.b3": "Centralized control of your social presence",
     "product.cta": "Discover Sokestra",
+
+    "home.hero.annTag":  "New",
+    "home.hero.annText": "Sokestra — AI-orchestrated social media",
 
     "soon.eyebrow": "Coming soon",
     "soon.title":   "Our next products",
