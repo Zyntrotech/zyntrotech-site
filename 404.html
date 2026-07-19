@@ -4,35 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>Message envoyé — ZYNTROTECH</title>
-  <meta name="robots" content="noindex,follow" />
-  <link rel="canonical" href="https://zyntrotech.com/merci.html" />
+  <title>Page introuvable — ZYNTROTECH</title>
+  <meta name="robots" content="noindex" />
   <meta name="theme-color" content="#07151a" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="ZYNTROTECH" />
-  <meta property="og:url" content="https://zyntrotech.com/merci.html" />
-  <meta property="og:title" content="Message envoyé — ZYNTROTECH" />
-  <meta property="og:image" content="https://zyntrotech.com/assets/og-image.png" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="preload" href="assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- Chemins absolus : Netlify sert cette page depuis n'importe quelle URL -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="preload" href="/assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
-<body data-title-key="meta.merci.title">
+<body data-title-key="meta.notfound.title">
 
   <header class="site-header">
     <div class="container nav">
       <a href="/" class="brand">
-        <img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech
+        <img class="logo-mark" src="/assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech
       </a>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
         <li><a href="/" data-i18n="nav.home">Accueil</a></li>
-        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="/services.html" data-i18n="nav.services">Services</a></li>
         <li><a href="/#product" data-i18n="nav.product">Produit</a></li>
-        <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="/about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="/contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav-right">
         <button class="theme-toggle" aria-label="Thème" type="button">
@@ -43,7 +38,7 @@
           <button data-lang="fr" type="button">FR</button>
           <button data-lang="en" type="button">EN</button>
         </div>
-        <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Discutons</a>
+        <a href="/contact.html" class="btn btn-primary" data-i18n="nav.cta">Discutons</a>
       </div>
     </div>
   </header>
@@ -51,13 +46,11 @@
   <main>
     <section class="hero" style="text-align:center; min-height:60vh; display:flex; align-items:center">
       <div class="container">
-        <div style="width:76px;height:76px;margin:0 auto 1.6rem;border-radius:20px;display:grid;place-items:center;background:var(--grad-soft);box-shadow:var(--glow);color:#fff">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-        </div>
-        <h1 data-i18n="merci.h">Message envoyé !</h1>
-        <p class="lead" style="margin:1rem auto 0" data-i18n="merci.p">Merci pour votre message. Nous revenons vers vous sous 48 h.</p>
+        <p class="grad-text" style="font-size:5rem; font-weight:800; letter-spacing:-.04em; line-height:1; margin:0 0 1rem" aria-hidden="true">404</p>
+        <h1 data-i18n="notfound.h">Page introuvable</h1>
+        <p class="lead" style="margin:1rem auto 0" data-i18n="notfound.p">La page que vous cherchez n’existe pas ou a été déplacée.</p>
         <p style="margin-top:2.2rem">
-          <a href="/" class="btn btn-primary btn-lg" data-i18n="merci.btn">Retour à l’accueil</a>
+          <a href="/" class="btn btn-primary btn-lg" data-i18n="notfound.btn">Retour à l’accueil</a>
         </p>
       </div>
     </section>
@@ -67,13 +60,13 @@
     <div class="container">
       <div class="footer-bottom" style="border-top:0; padding-top:0">
         <span>© <span data-year>2026</span> ZYNTROTECH — <span data-i18n="footer.rights">Tous droits réservés.</span></span>
-        <span><a href="legal.html" data-i18n="footer.legallink">Mentions légales</a></span>
+        <span><a href="/legal.html" data-i18n="footer.legallink">Mentions légales</a></span>
         <span>Paris, France</span>
       </div>
     </div>
   </footer>
 
-  <script src="js/translations.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/translations.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

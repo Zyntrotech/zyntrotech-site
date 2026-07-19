@@ -6,12 +6,19 @@
 
 window.TRANSLATIONS = {
   fr: {
-    /* Méta / titres de page */
-    "meta.home.title":     "ZYNTROTECH — Conseil Data, BI & Développement logiciel",
-    "meta.services.title": "Services — ZYNTROTECH",
-    "meta.about.title":    "À propos — ZYNTROTECH",
-    "meta.contact.title":  "Contact — ZYNTROTECH",
+    /* Méta / titres de page — IDENTIQUES aux <title> statiques du HTML :
+       Google indexe le DOM rendu, ces clés ne doivent jamais appauvrir les titres. */
+    "meta.home.title":     "ZYNTROTECH — Conseil Data, BI, IA & Développement logiciel",
+    "meta.services.title": "Services — Data, BI, IA & Logiciel | ZYNTROTECH",
+    "meta.about.title":    "À propos — ZYNTROTECH | Conseil Data, IA & Logiciel",
+    "meta.contact.title":  "Contact — ZYNTROTECH | Parlons de votre projet data",
     "meta.legal.title":    "Mentions légales — ZYNTROTECH",
+
+    /* Méta descriptions — identiques aux meta description statiques (120-160 car.) */
+    "meta.home.desc":     "Conseil en data, BI, IA et développement logiciel. On transforme vos données en tableaux de bord clairs, en IA utile et en applications sur mesure.",
+    "meta.services.desc": "Du tableau de bord à l’IA sur mesure : business intelligence, data science, intelligence artificielle et développement logiciel par ZYNTROTECH.",
+    "meta.about.desc":    "ZYNTROTECH, c’est le conseil en data, IA et logiciel qui transforme vos chiffres en décisions. Basé à Paris, partout en France et à distance.",
+    "meta.contact.desc":  "Une question, un projet data, IA ou logiciel ? Contactez ZYNTROTECH à Paris — réponse sous 48 h, sans engagement.",
 
     /* Navigation */
     "nav.home":     "Accueil",
@@ -246,6 +253,12 @@ window.TRANSLATIONS = {
     "merci.p":   "Merci pour votre message. Nous revenons vers vous sous 48 h.",
     "merci.btn": "Retour à l’accueil",
 
+    /* Page 404 */
+    "meta.notfound.title": "Page introuvable — ZYNTROTECH",
+    "notfound.h":   "Page introuvable",
+    "notfound.p":   "La page que vous cherchez n’existe pas ou a été déplacée.",
+    "notfound.btn": "Retour à l’accueil",
+
     /* Footer */
     "footer.tagline": "Conseil en business intelligence, data science, IA et développement logiciel.",
     "footer.nav":     "Navigation",
@@ -260,20 +273,26 @@ window.TRANSLATIONS = {
     "legal.editor.h": "Éditeur du site",
     "legal.editor.p": "Le présent site est édité par ZYNTROTECH, SASU au capital de 1 000 €.",
     "legal.host.h": "Hébergement",
-    "legal.host.p": "À compléter avec les informations de votre hébergeur (nom, adresse, téléphone).",
+    "legal.host.p": "Ce site est hébergé par Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis — www.netlify.com.",
     "legal.data.h": "Données personnelles",
-    "legal.data.p": "Les informations transmises via le formulaire de contact sont utilisées uniquement pour répondre à votre demande et ne sont jamais cédées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression de vos données.",
+    "legal.data.p": "Les informations transmises via le formulaire de contact sont utilisées uniquement pour répondre à votre demande. Elles sont traitées par Netlify Forms (réception des messages) et le formulaire est protégé par Google reCAPTCHA, qui peut collecter des données techniques (dont l’adresse IP). Elles ne sont ni vendues ni utilisées à d’autres fins. Conformément au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression de vos données.",
     "legal.ip.h": "Propriété intellectuelle",
     "legal.ip.p": "L’ensemble des contenus de ce site est la propriété de ZYNTROTECH, sauf mention contraire."
   },
 
   en: {
     /* Meta / page titles */
-    "meta.home.title":     "ZYNTROTECH — Data, BI & Software Consulting",
-    "meta.services.title": "Services — ZYNTROTECH",
-    "meta.about.title":    "About — ZYNTROTECH",
-    "meta.contact.title":  "Contact — ZYNTROTECH",
+    "meta.home.title":     "ZYNTROTECH — Data, BI, AI & Software Consulting",
+    "meta.services.title": "Services — Data, BI, AI & Software | ZYNTROTECH",
+    "meta.about.title":    "About — ZYNTROTECH | Data, AI & Software Consulting",
+    "meta.contact.title":  "Contact — ZYNTROTECH | Let’s talk about your data project",
     "meta.legal.title":    "Legal notice — ZYNTROTECH",
+
+    /* Meta descriptions */
+    "meta.home.desc":     "Data, BI, AI and software consulting. We turn your data into clear dashboards, useful AI and custom applications.",
+    "meta.services.desc": "From dashboards to custom AI: business intelligence, data science, artificial intelligence and software development by ZYNTROTECH.",
+    "meta.about.desc":    "ZYNTROTECH is the data, AI and software consulting firm that turns your numbers into decisions. Based in Paris, across France and remotely.",
+    "meta.contact.desc":  "A question or a data, AI or software project? Contact ZYNTROTECH in Paris — reply within 48 hours, no strings attached.",
 
     /* Navigation */
     "nav.home":     "Home",
@@ -508,6 +527,12 @@ window.TRANSLATIONS = {
     "merci.p":   "Thanks for your message. We’ll get back to you within 48h.",
     "merci.btn": "Back to home",
 
+    /* 404 page */
+    "meta.notfound.title": "Page not found — ZYNTROTECH",
+    "notfound.h":   "Page not found",
+    "notfound.p":   "The page you are looking for doesn’t exist or has been moved.",
+    "notfound.btn": "Back to home",
+
     /* Footer */
     "footer.tagline": "Consulting in business intelligence, data science, AI and software development.",
     "footer.nav":     "Navigation",
@@ -522,9 +547,9 @@ window.TRANSLATIONS = {
     "legal.editor.h": "Site publisher",
     "legal.editor.p": "This website is published by ZYNTROTECH, a SASU with share capital of €1,000.",
     "legal.host.h": "Hosting",
-    "legal.host.p": "To be completed with your host’s information (name, address, phone).",
+    "legal.host.p": "This website is hosted by Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, USA — www.netlify.com.",
     "legal.data.h": "Personal data",
-    "legal.data.p": "Information sent via the contact form is used solely to answer your request and is never shared with third parties. Under the GDPR, you have the right to access, correct and delete your data.",
+    "legal.data.p": "Information sent via the contact form is used solely to answer your request. It is processed by Netlify Forms (message delivery), and the form is protected by Google reCAPTCHA, which may collect technical data (including your IP address). It is never sold or used for any other purpose. Under the GDPR, you have the right to access, correct and delete your data.",
     "legal.ip.h": "Intellectual property",
     "legal.ip.p": "All content on this site is the property of ZYNTROTECH unless otherwise stated."
   }

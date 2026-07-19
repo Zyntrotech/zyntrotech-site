@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://www.google.com https://www.gstatic.com; connect-src 'self'; form-action 'self'; frame-src https://www.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Contact — ZYNTROTECH | Parlons de votre projet data</title>
-  <meta name="description" data-i18n-content="contact.hero.lead"
-        content="Une question, un projet, une idée ? Contactez ZYNTROTECH — réponse sous 48 h, sans engagement." />
+  <meta name="description" data-i18n-content="meta.contact.desc"
+        content="Une question, un projet data, IA ou logiciel ? Contactez ZYNTROTECH à Paris — réponse sous 48 h, sans engagement." />
   <link rel="canonical" href="https://zyntrotech.com/contact.html" />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#07151a" />
@@ -21,27 +20,27 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — ZYNTROTECH" />
+  <meta name="twitter:description" content="Parlons de votre projet data, IA ou logiciel. Réponse sous 48 h." />
   <meta name="twitter:image" content="https://zyntrotech.com/assets/og-image.png" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-title-key="meta.contact.title">
 
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
+      <a href="/" class="brand">
         <img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech
       </a>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="/" data-i18n="nav.home">Accueil</a></li>
         <li><a href="services.html" data-i18n="nav.services">Services</a></li>
-        <li><a href="index.html#product" data-i18n="nav.product">Produit</a></li>
+        <li><a href="/#product" data-i18n="nav.product">Produit</a></li>
         <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
         <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
       </ul>
@@ -73,7 +72,7 @@
         <!-- Formulaire -->
         <form id="contact-form" name="contact" method="POST" action="/merci.html"
               data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true"
-              class="form form-card reveal" novalidate>
+              class="form form-card reveal">
           <input type="hidden" name="form-name" value="contact" />
           <!-- honeypot anti-robot (ne pas remplir) -->
           <p hidden><label>Ne pas remplir : <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
@@ -129,17 +128,18 @@
     <div class="container">
       <div class="footer-top">
         <div>
-          <a href="index.html" class="brand"><img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech</a>
+          <a href="/" class="brand"><img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech</a>
           <p style="margin-top:1rem" data-i18n="footer.tagline">Conseil en BI, data science et développement logiciel.</p>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.nav">Navigation</h4>
           <ul>
-            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="/" data-i18n="nav.home">Accueil</a></li>
             <li><a href="services.html" data-i18n="nav.services">Services</a></li>
-            <li><a href="index.html#product" data-i18n="nav.product">Produit</a></li>
+            <li><a href="/#product" data-i18n="nav.product">Produit</a></li>
             <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="legal.html" data-i18n="footer.legallink">Mentions légales</a></li>
           </ul>
         </div>
       </div>

@@ -32,12 +32,14 @@
     });
   }
 
-  /* ---------- Langue ---------- */
+  /* ---------- Langue ----------
+     FR par défaut, TOUJOURS : pas d'auto-détection via navigator.language.
+     Googlebot rend les pages depuis les USA (locale en-US, stockage vierge) ;
+     auto-détecter ferait indexer la version anglaise des URLs françaises.
+     L'anglais ne s'applique que sur choix explicite (bouton EN, mémorisé). */
   function getLang() {
     var stored = localStorage.getItem("zt-lang");
-    if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
-    var nav = (navigator.language || DEFAULT_LANG).slice(0, 2).toLowerCase();
-    return SUPPORTED.indexOf(nav) !== -1 ? nav : DEFAULT_LANG;
+    return stored && SUPPORTED.indexOf(stored) !== -1 ? stored : DEFAULT_LANG;
   }
 
   function t(key, lang) {

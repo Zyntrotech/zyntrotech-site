@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>ZYNTROTECH — Conseil Data, BI, IA & Développement logiciel</title>
-  <meta name="description" data-i18n-content="home.hero.lead"
+  <meta name="description" data-i18n-content="meta.home.desc"
         content="Conseil en data, BI, IA et développement logiciel. On transforme vos données en tableaux de bord clairs, en IA utile et en applications sur mesure." />
   <link rel="canonical" href="https://zyntrotech.com/" />
   <meta name="robots" content="index,follow" />
@@ -15,7 +14,6 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="ZYNTROTECH" />
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:url" content="https://zyntrotech.com/" />
   <meta property="og:title" content="ZYNTROTECH — Conseil Data, BI, IA & Logiciel" />
   <meta property="og:description" content="On transforme vos données en tableaux de bord clairs, en IA utile et en applications sur mesure." />
@@ -31,6 +29,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "ZYNTROTECH",
+    "legalName": "ZYNTROTECH",
+    "vatID": "FR57940723281",
     "url": "https://zyntrotech.com/",
     "logo": "https://zyntrotech.com/assets/logo-mark.svg",
     "image": "https://zyntrotech.com/assets/og-image.png",
@@ -38,16 +38,72 @@
     "foundingDate": "2025-02",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Paris",
+      "addressLocality": "Poissy",
+      "addressRegion": "Île-de-France",
       "addressCountry": "FR"
+    },
+    "areaServed": "FR",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "url": "https://zyntrotech.com/contact.html",
+      "availableLanguage": ["fr", "en"]
     },
     "knowsAbout": ["Business Intelligence", "Data Science", "Intelligence Artificielle", "Développement logiciel"]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Sokestra",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://sokestra.com",
+    "description": "Plateforme SaaS qui orchestre vos réseaux sociaux grâce à l’IA : planification, création et publication automatisées.",
+    "publisher": { "@type": "Organization", "name": "ZYNTROTECH", "url": "https://zyntrotech.com/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Combien de temps prend un projet ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cela dépend du périmètre, mais on livre par étapes courtes : un premier résultat utile en quelques semaines, pas en plusieurs mois." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment se passe la facturation ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Au forfait pour un périmètre défini, ou en accompagnement (à la journée) pour un besoin évolutif. Un devis clair avant de démarrer, sans surprise." }
+      },
+      {
+        "@type": "Question",
+        "name": "À qui appartiennent les données et le code ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "À vous, entièrement. Vos données restent les vôtres et le code livré vous appartient — documenté et réutilisable." }
+      },
+      {
+        "@type": "Question",
+        "name": "Mes données sont-elles en sécurité ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oui. Nous travaillons dans le respect du RGPD, avec un accès limité au strict nécessaire. Rien n’est cédé à des tiers." }
+      },
+      {
+        "@type": "Question",
+        "name": "Que se passe-t-il après la livraison ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Vos équipes sont formées pour reprendre la main. Nous pouvons aussi assurer un suivi et faire évoluer l’outil si vous le souhaitez." }
+      },
+      {
+        "@type": "Question",
+        "name": "Travaillez-vous à distance ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oui, partout en France et à distance. Basés à Paris, nous nous adaptons à votre organisation." }
+      }
+    ]
+  }
+  </script>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-title-key="meta.home.title">
@@ -55,14 +111,14 @@
   <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
+      <a href="/" class="brand">
         <img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech
       </a>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html" class="active" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="/" class="active" data-i18n="nav.home">Accueil</a></li>
         <li><a href="services.html" data-i18n="nav.services">Services</a></li>
         <li><a href="#product" data-i18n="nav.product">Produit</a></li>
         <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
@@ -479,17 +535,18 @@
     <div class="container">
       <div class="footer-top">
         <div>
-          <a href="index.html" class="brand"><img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech</a>
+          <a href="/" class="brand"><img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech</a>
           <p style="margin-top:1rem" data-i18n="footer.tagline">Conseil en business intelligence, data science et développement logiciel.</p>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.nav">Navigation</h4>
           <ul>
-            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="/" data-i18n="nav.home">Accueil</a></li>
             <li><a href="services.html" data-i18n="nav.services">Services</a></li>
             <li><a href="#product" data-i18n="nav.product">Produit</a></li>
             <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="legal.html" data-i18n="footer.legallink">Mentions légales</a></li>
           </ul>
         </div>
       </div>

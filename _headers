@@ -1,4 +1,11 @@
-# En-têtes de sécurité — Netlify / Cloudflare Pages
+# En-têtes de sécurité — Netlify
+# Source unique de vérité pour la CSP (pas de meta CSP dans les pages HTML :
+# une double déclaration meta + header impose l'intersection des deux et a
+# déjà divergé par le passé).
+# script-src/frame-src Google : requis par le reCAPTCHA injecté par Netlify
+# sur /contact.html. Netlify concatène les en-têtes dupliqués quand plusieurs
+# règles matchent le même chemin (deux CSP = intersection), donc une seule
+# CSP globale plutôt qu'une variante par chemin.
 /*
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Frame-Options: DENY
@@ -6,4 +13,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), interest-cohort=()
   Cross-Origin-Opener-Policy: same-origin
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://www.google.com https://www.gstatic.com; connect-src 'self'; form-action 'self'; frame-src https://www.google.com; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://www.google.com https://www.gstatic.com; connect-src 'self'; form-action 'self'; frame-src https://www.google.com; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable

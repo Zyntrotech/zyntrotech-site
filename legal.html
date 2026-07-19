@@ -3,32 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Mentions légales — ZYNTROTECH</title>
   <meta name="robots" content="noindex,follow" />
   <link rel="canonical" href="https://zyntrotech.com/legal.html" />
   <meta name="theme-color" content="#07151a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ZYNTROTECH" />
+  <meta property="og:url" content="https://zyntrotech.com/legal.html" />
+  <meta property="og:title" content="Mentions légales — ZYNTROTECH" />
+  <meta property="og:image" content="https://zyntrotech.com/assets/og-image.png" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-title-key="meta.legal.title">
 
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
+      <a href="/" class="brand">
         <img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech
       </a>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="/" data-i18n="nav.home">Accueil</a></li>
         <li><a href="services.html" data-i18n="nav.services">Services</a></li>
-        <li><a href="index.html#product" data-i18n="nav.product">Produit</a></li>
+        <li><a href="/#product" data-i18n="nav.product">Produit</a></li>
         <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
         <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
@@ -67,10 +69,10 @@
         </ul>
 
         <h2 data-i18n="legal.host.h">Hébergement</h2>
-        <p data-i18n="legal.host.p">À compléter avec les informations de votre hébergeur.</p>
+        <p data-i18n="legal.host.p">Ce site est hébergé par Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis — www.netlify.com.</p>
 
         <h2 data-i18n="legal.data.h">Données personnelles</h2>
-        <p data-i18n="legal.data.p">Les informations transmises via le formulaire de contact sont utilisées uniquement pour répondre à votre demande.</p>
+        <p data-i18n="legal.data.p">Les informations transmises via le formulaire de contact sont utilisées uniquement pour répondre à votre demande. Elles sont traitées par Netlify Forms (réception des messages) et le formulaire est protégé par Google reCAPTCHA, qui peut collecter des données techniques (dont l’adresse IP). Elles ne sont ni vendues ni utilisées à d’autres fins. Conformément au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression de vos données.</p>
 
         <h2 data-i18n="legal.ip.h">Propriété intellectuelle</h2>
         <p data-i18n="legal.ip.p">L’ensemble des contenus de ce site est la propriété de ZYNTROTECH.</p>
@@ -82,17 +84,18 @@
     <div class="container">
       <div class="footer-top">
         <div>
-          <a href="index.html" class="brand"><img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech</a>
+          <a href="/" class="brand"><img class="logo-mark" src="assets/logo-mark.svg" alt="ZyntroTech" /> ZyntroTech</a>
           <p style="margin-top:1rem" data-i18n="footer.tagline">Conseil en BI, data science et développement logiciel.</p>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.nav">Navigation</h4>
           <ul>
-            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="/" data-i18n="nav.home">Accueil</a></li>
             <li><a href="services.html" data-i18n="nav.services">Services</a></li>
-            <li><a href="index.html#product" data-i18n="nav.product">Produit</a></li>
+            <li><a href="/#product" data-i18n="nav.product">Produit</a></li>
             <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="legal.html" data-i18n="footer.legallink">Mentions légales</a></li>
           </ul>
         </div>
       </div>
