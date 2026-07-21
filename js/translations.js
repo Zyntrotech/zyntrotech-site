@@ -39,14 +39,24 @@ window.TRANSLATIONS = {
     "product.b3": "Pilotage centralisé de votre présence sociale",
     "product.cta": "Découvrir Sokestra",
 
+    /* Produit — Nubireo */
+    "nubireo.eyebrow": "Notre nouveau produit",
+    "nubireo.title":   "Nubireo",
+    "nubireo.by":      "Édité par ZYNTROTECH",
+    "nubireo.tagline": "Gestion des CRA, congés et validations",
+    "nubireo.text":    "Nubireo centralise la saisie des comptes rendus d’activité, la gestion des congés, le partage de fichiers et les circuits de validation — pensé pour les sociétés de conseil et les indépendants.",
+    "nubireo.b1": "Saisie et suivi des CRA (comptes rendus d’activité)",
+    "nubireo.b2": "Gestion des congés et des absences",
+    "nubireo.b3": "Circuits de validation et partage de fichiers",
+    "nubireo.cta": "Découvrir Nubireo",
+
     "home.hero.annTag":  "Nouveau",
     "home.hero.annText": "Sokestra — réseaux sociaux orchestrés par l’IA",
 
     "soon.eyebrow": "À venir",
-    "soon.title":   "Nos prochains produits",
+    "soon.title":   "Notre prochain produit",
     "soon.badge":   "Bientôt disponible",
     "soon.nibras":  "Un nouveau produit ZYNTROTECH en préparation. Plus de détails très bientôt.",
-    "soon.nubireo": "Un nouveau produit ZYNTROTECH en préparation. Plus de détails très bientôt.",
 
     /* Accueil — hero */
     "home.hero.eyebrow": "Conseil Data · IA · Logiciel",
@@ -313,14 +323,24 @@ window.TRANSLATIONS = {
     "product.b3": "Centralized control of your social presence",
     "product.cta": "Discover Sokestra",
 
+    /* Product — Nubireo */
+    "nubireo.eyebrow": "Our new product",
+    "nubireo.title":   "Nubireo",
+    "nubireo.by":      "Built by ZYNTROTECH",
+    "nubireo.tagline": "Timesheets, leave and approvals management",
+    "nubireo.text":    "Nubireo centralises activity-report entry, leave management, file sharing and approval workflows — built for consulting firms and independent contractors.",
+    "nubireo.b1": "Activity-report (timesheet) entry and tracking",
+    "nubireo.b2": "Leave and absence management",
+    "nubireo.b3": "Approval workflows and file sharing",
+    "nubireo.cta": "Discover Nubireo",
+
     "home.hero.annTag":  "New",
     "home.hero.annText": "Sokestra — AI-orchestrated social media",
 
     "soon.eyebrow": "Coming soon",
-    "soon.title":   "Our next products",
+    "soon.title":   "Our next product",
     "soon.badge":   "Coming soon",
     "soon.nibras":  "A new ZYNTROTECH product in the making. More details very soon.",
-    "soon.nubireo": "A new ZYNTROTECH product in the making. More details very soon.",
 
     /* Home — hero */
     "home.hero.eyebrow": "Data · AI · Software consulting",

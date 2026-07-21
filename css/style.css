@@ -173,6 +173,7 @@ img { display: block; }
 
 /* Produits à venir */
 .soon-block { margin-top: 5rem; padding-top: 4.5rem; border-top: 1px solid var(--line-soft); }
+.soon-single { max-width: 560px; margin: 0 auto; }
 .soon-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; }
 .soon-mark {
   width: 46px; height: 46px; border-radius: 12px;
